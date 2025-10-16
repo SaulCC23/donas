@@ -100,7 +100,7 @@ class DonutTile extends StatelessWidget {
                     onPressed: () {},
                     icon: Icon(
                       Icons.favorite_border,
-                      color: Colors.grey[600],
+                      color: Colors.pink[600],
                     ),
                     iconSize: 28,
                   ),
