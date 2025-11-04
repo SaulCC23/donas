@@ -51,16 +51,36 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
   assets:
-    - lib/icons/
-    - lib/images/
+    # iconos de pestañas
+    - lib/icons/donut.png
+    - lib/icons/burger.png
+    - lib/icons/smoothie.png
+    - lib/icons/pancakes.png
+    - lib/icons/pizza.png
+
+    # imágenes usadas por las tabs
+    - lib/images/chocolate_donut.png
+    - lib/images/strawberry_donut.png
+    - lib/images/icecream_donut.png
+    - lib/images/grape_donut.png
+    - lib/images/pizza_normal.jpg
+    - lib/images/pizza_pepperoni.jpg
+    - lib/images/pizza_hawaiian.jpg
+    - lib/images/pizza_veggie.png
+    - lib/images/burguer_normal.webp
+    - lib/images/burger_queso.webp
+    - lib/images/burger_BBQ.jpg
+    - lib/images/veggie.webp
+    - lib/images/Chocolate.webp
+    - lib/images/Blueberry.png
+    - lib/images/Maple.webp
+    - lib/images/Strawberry.webp
+    - lib/images/Mango.png
+    - lib/images/Berry.png
+    - lib/images/Detox.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

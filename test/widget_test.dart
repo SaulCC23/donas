@@ -11,20 +11,12 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:donas/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const HomePage()); // Cambiado: WAXPP -> MyApp
+  testWidgets('App builds and shows header', (WidgetTester tester) async {
+    // Arranca la app completa
+    await tester.pumpWidget(const MyApp());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
-
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add)); // Corregido: icons.add -> Icons.add
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // Esperamos que el texto principal exista
+    expect(find.text('I want to '), findsOneWidget);
+    expect(find.text('Eat'), findsOneWidget);
   });
 }
